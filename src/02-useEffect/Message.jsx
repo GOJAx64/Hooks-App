@@ -17,8 +17,8 @@ export const Message = () => {
     
 
     return (
-    <>
-        <h3> User exists</h3>
-    </>
+    <div className='bg-yellow-100 border border-yellow-400 text-yellow-700 px-2 py-1.5 rounded relative'>
+        <h3 className='font-bold'> User exists</h3>
+    </div>
   )
 }

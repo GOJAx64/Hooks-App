@@ -1,5 +1,7 @@
 export const HookApp = () => {
   return (
-    <h1>HookApp</h1>
+    <div className='fixed top-20 left-16 right-auto'>
+      <h1 className='text-gray-700 font-bold'>HookApp</h1>
+    </div>
   )
 }

@@ -14,8 +14,8 @@ export const FormWithCustomHook = () => {
   
     return (
         <div className='fixed top-20 left-16 right-auto'>
-            <h1 className='text-lg'>Form with custom Hook</h1> 
-            <hr className='pt-5'/>
+            <h1 className='text-lg font-bold'>Form with custom Hook</h1> 
+            <hr className='pt-2 border-slate-400'/>
             
             <input 
                 type="text" 
