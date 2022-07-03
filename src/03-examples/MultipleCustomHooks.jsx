@@ -11,7 +11,7 @@ export const MultipleCustomHooks = () => {
     return (
         <div className='fixed top-20 left-16 right-auto'>
             <h1 className='text-blue-700 font-bold'>BreakingBad Quotes</h1>
-            <hr lassName='pt-2 border-slate-900'/>
+            <hr className='pt-2 border-slate-900'/>
             {
                 isLoading ? <LoadingQuote /> : <Quote author={ author } quote={ quote } />
             }
