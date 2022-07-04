@@ -24,11 +24,11 @@ export const CallbackHook = () => {
 
 
     return (
-        <>
-            <h1>useCallback Hook: { counter } </h1>
-            <hr />
+        <div className='fixed top-20 left-16 right-auto'>
+            <h1 className='font-bold'>useCallback Hook: { counter } </h1>
+            <hr className='pt-2 border-slate-900'/>
 
             <ShowIncrement increment={ incrementFather } />
-        </>
+        </div>
     )
 }

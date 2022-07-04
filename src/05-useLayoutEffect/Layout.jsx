@@ -9,23 +9,23 @@ export const Layout = () => {
     const { author, quote } = !!data && data[0];
     
     return (
-        <>
-            <h1>BreakingBad Quotes</h1>
-            <hr />
+        <div className='fixed top-20 left-16 right-auto'>
+            <h1 className='text-blue-700 font-bold'>BreakingBad Quotes</h1>
+            <hr className='pt-2 border-slate-900'/>
 
             {
                 isLoading
                  ? <LoadingQuote />
                  : <Quote author={ author } quote={ quote } />
             }
-                      
+            <br />         
             <button 
-                className="btn btn-primary"
+                className="mt-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-1.5 text-center"
                 disabled={ isLoading }
                 onClick={ () => increment() }>
                 Next quote
             </button>
 
-        </>
+        </div>
     )
 }

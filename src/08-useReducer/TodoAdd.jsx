@@ -27,7 +27,7 @@ export const TodoAdd = ({ onNewTodo }) => {
             <input 
                 type="text" 
                 placeholder="What is there to do?"
-                className="bg-gray-100 mb-2.5 border border-gray-400 space-x-32 text-gray-900 text-sm rounded-lg block p-2"
+                className="bg-gray-100 mb-2 border border-gray-400 space-x-32 text-gray-900 text-sm rounded-lg p-1.5 mr-1"
                 name="description"
                 value={ description }
                 onChange={ onInputChange }
@@ -35,7 +35,7 @@ export const TodoAdd = ({ onNewTodo }) => {
 
             <button 
                 type="submit"
-                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-1.5 text-center"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm sm:w-auto px-5 py-1.5 text-center"
             >
                 +
             </button>

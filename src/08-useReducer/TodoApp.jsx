@@ -9,23 +9,19 @@ export const TodoApp = () => {
     
     return (
         <>
-            <h1>TodoApp: { todosCount }, <small>pendientes: { pendingTodosCount }</small> </h1>
-            <hr className='pt-2 border-slate-400'/>
-            <div className="fixed top-20 left-16 right-auto grid grid-cols-2">
-                <h1>Total: { todosCount }, <small>due: { pendingTodosCount }</small> </h1>
-                <hr />
+            <div className="absolute top-10 left-12 right-auto">
+                <div className="">
+                    <h4 className='text-lg font-bold'>To-Do App</h4>
+                    <h4 className='text-sm text-blue-900 text-blue-900'>Total: { todosCount } - <small className='text-zinc-500'>due: { pendingTodosCount }</small> </h4>
+                    <hr className='pt-2 border-slate-400'/>
+                    <TodoAdd onNewTodo={ handleNewTodo } />
+                </div>
                 <div className="">
                     <TodoList
                         todos={ todos } 
                         onDeleteTodo={ handleDeleteTodo } 
                         onToggleTodo={ handleToggleTodo }
                     />
-                </div>
-
-                <div className="">
-                    <h4 className='text-lg font-bold'>Add To-Do</h4>
-                    <hr className='pt-2 border-slate-400'/>
-                    <TodoAdd onNewTodo={ handleNewTodo } />
                 </div>
             </div>
         </>
